@@ -18,37 +18,55 @@
         .certificate-container {
             border-collapse: separate;
             border-spacing: 1px;
-            width: 80%;
-            max-width: 700px;
+            width: 95%;
+            max-width: 500px;
             background-color: white;
         }
         
         .certificate-container td {
             border: 1px solid #ccc;
-            padding: 10px;
-            height: 40px;
+            padding: 8px;
+            height: 36px;
             background-color: white;
+            font-size: 14px;
         }
         
         .label {
-            width: 30%;
+            width: 38%;
             text-align: right;
             font-weight: normal;
         }
         
         .value {
-            width: 70%;
+            width: 62%;
         }
         
         .photo-cell {
-            height: 200px;
+            height: 150px;
             text-align: center;
         }
         
         .photo {
-            max-height: 180px;
-            max-width: 140px;
+            max-height: 120px;
+            max-width: 90px;
             object-fit: contain;
+        }
+        
+        @media screen and (max-width: 480px) {
+            .certificate-container td {
+                padding: 6px;
+                height: 32px;
+                font-size: 13px;
+            }
+            
+            .photo-cell {
+                height: 130px;
+            }
+            
+            .photo {
+                max-height: 100px;
+                max-width: 80px;
+            }
         }
     </style>
 </head>
@@ -78,7 +96,7 @@
         </tr>
         <tr>
             <td class="label">身份证号：</td>
-            <td class="value">360681199503019015</td>
+            <td class="value">360681199503019012</td>
         </tr>
         <tr>
             <td class="label">职业（工种）及等级：</td>
